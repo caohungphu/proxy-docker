@@ -14,6 +14,16 @@ This project contains Docker configurations for running various proxy services, 
     └── socks5.env
 ```
 
+## Telegram Proxy Setup
+
+For detailed instructions on setting up Telegram proxies (MTProto and SOCKS5) with either direct server access or Cloudflare WARP for blocked regions, please refer to [TelegramProxy.md](README/TelegramProxy.mdTelegramProxy.md).
+
+Key features:
+
+- MTProto proxy on port 51443
+- SOCKS5 proxy on port 51080
+- Optional Cloudflare WARP integration (SOCKS5 proxy blocked regions)
+
 ## Install docker
 
 ```
@@ -75,7 +85,7 @@ A lightweight SOCKS5 proxy server.
    ```bash
    docker compose up -d
    ```
-4. Access the web panel at `http://your-server-ip:54321`
+4. Access the web panel at `http://your-server-ip:2053`
 
 ### MTProto and SOCKS5 Setup
 
