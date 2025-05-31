@@ -83,13 +83,19 @@ Use one of these formats to connect:
 ### Configuration Steps
 
 1. Set up inbound rules in the X-UI panel
-2. Configure outbound rules with WARP
+   ![Inbound Configuration](../README/inbound.png)
+
+2. Configure outbound rules and routing with WARP
+   ![WARP Configuration](../README/warp.png)
+   ![Routing Configuration](../README/routing.png)
+
 3. Test the WARP connection:
    ```bash
    curl -x "socks5h://<your_proxy_user>:<your_proxy_pass>@<your_ip>:<your_port>" \
         -fsSL "https://www.cloudflare.com/cdn-cgi/trace" | grep warp
    ```
    Expected output: `warp=on`
+   ![Trace](../README/trace.png)
 
 ### Connection Information
 
