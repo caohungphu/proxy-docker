@@ -1,0 +1,16 @@
+services:
+  mtproto:
+    image: telegrammessenger/proxy:latest
+    container_name: mtproto
+    restart: always
+    env_file: mtproto.env
+    ports:
+      - "51443:443"
+
+  socks5:
+    image: serjs/go-socks5-proxy:latest
+    container_name: socks5
+    restart: always
+    env_file: socks5.env
+    ports:
+      - "51080:1080"
