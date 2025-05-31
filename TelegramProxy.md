@@ -83,11 +83,11 @@ Use one of these formats to connect:
 ### Configuration Steps
 
 1. Set up inbound rules in the X-UI panel
-   ![Inbound Configuration](../README/inbound.png)
+   ![Inbound Configuration](_docs/inbound.png)
 
 2. Configure outbound rules and routing with WARP
-   ![WARP Configuration](../README/warp.png)
-   ![Routing Configuration](../README/routing.png)
+   ![WARP Configuration](_docs/warp.png)
+   ![Routing Configuration](_docs/routing.png)
 
 3. Test the WARP connection:
    ```bash
@@ -95,7 +95,7 @@ Use one of these formats to connect:
         -fsSL "https://www.cloudflare.com/cdn-cgi/trace" | grep warp
    ```
    Expected output: `warp=on`
-   ![Trace](../README/trace.png)
+   ![Trace](_docs/trace.png)
 
 ### Connection Information
 

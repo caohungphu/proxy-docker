@@ -16,7 +16,7 @@ This project contains Docker configurations for running various proxy services, 
 
 ## Telegram Proxy Setup
 
-For detailed instructions on setting up Telegram proxies (MTProto and SOCKS5) with either direct server access or Cloudflare WARP for blocked regions, please refer to [TelegramProxy.md](README/TelegramProxy.md).
+For detailed instructions on setting up Telegram proxies (MTProto and SOCKS5) with either direct server access or Cloudflare WARP for blocked regions, please refer to [TelegramProxy.md](TelegramProxy.md).
 
 Key features:
 
