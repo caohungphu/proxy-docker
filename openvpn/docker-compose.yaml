@@ -1,0 +1,11 @@
+services:
+  openvpn:
+    image: kylemanna/openvpn:latest
+    container_name: openvpn
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "51194:1194/udp"
+    volumes:
+      - ./openvpn-data:/etc/openvpn

@@ -2,7 +2,7 @@ services:
   3x-ui:
     image: ghcr.io/mhsanaei/3x-ui:latest
     container_name: 3x-ui
-    hostname: yourhostname
+    hostname: 3x-ui
     volumes:
       - ./db/:/etc/x-ui/
       - ./cert/:/root/cert/
