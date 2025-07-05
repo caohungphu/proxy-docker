@@ -1,12 +1,13 @@
-FROM node:18-slim
+FROM node:22.13.0-slim
 
 WORKDIR /app
 
-COPY proxy.js .
+COPY package*.json ./
 
-RUN npm init -y && npm install http
+RUN npm install
 
-EXPOSE 8080
+COPY . .
 
-# Command to run the application
-CMD ["node", "proxy.js"]
+EXPOSE 3000
+
+CMD ["npm", "start"]

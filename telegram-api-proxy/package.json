@@ -1,0 +1,17 @@
+{
+  "name": "telegram-api-proxy",
+  "version": "1.0.0",
+  "description": "A lightweight HTTP proxy server that acts as a transparent intermediary for the Telegram Bot API. This proxy allows you to bypass network restrictions and create middleware for your Telegram bot applications.",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.20.0",
+    "node-fetch": "^3.3.2"
+  }
+}
